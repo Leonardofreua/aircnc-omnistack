@@ -1,5 +1,5 @@
-const Spot = require('../models/Spot');
-const User = require('../models/User');
+const Spot = require("../models/Spot");
+const User = require("../models/User");
 
 module.exports = {
   // Return list of resources
@@ -20,17 +20,17 @@ module.exports = {
     const user = await User.findById(user_id);
 
     if (!user) {
-      return res.status(400).json({ error: 'User does not exists' });
+      return res.status(400).json({ error: "User does not exists" });
     }
 
     const spot = await Spot.create({
       user: user_id,
       thumbnail: filename,
       company,
-      techs: techs.split(',').map(tech => tech.trim()),
+      techs: techs.split(",").map(tech => tech.trim()),
       price
     });
 
     return res.json(spot);
   }
-}
+};
