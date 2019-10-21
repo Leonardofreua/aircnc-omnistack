@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 import api from "../../services/api";
 
 import './styles.css'
@@ -26,10 +27,14 @@ export default function Dashboard() {
           <li key={spot._id}>
             <header style={{ backgroundImage: `url(${spot.thumbnail_url})` }}></header>
             <strong>{spot.company}</strong>
-            <span>{spot.price ? `R$${spot.price}/dia` : 'GRATUITO' }</span>
+            <span>{spot.price ? `R$${spot.price}/dia` : 'FREE' }</span>
           </li>
         ))}
       </ul>
+
+      <Link to="/new">
+        <button className="btn">Register new spot</button>
+      </Link>
     </>
   );
 }
