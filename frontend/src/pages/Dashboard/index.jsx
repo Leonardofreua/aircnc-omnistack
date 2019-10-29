@@ -37,6 +37,18 @@ export default function Dashboard() {
     loadSpots();
   }, []);
 
+  async function handleAccept(id) {
+    await api.post(`/bookings/${id}/approvals`);
+
+    setRequests(requests.filter(request => request._id !== id));
+  }
+
+  async function handleReject(id) {
+    await api.post(`/bookings/${id}/rejections`);
+
+    setRequests(requests.filter(request => request._id !== id));
+  }
+
   return (
     <>
       <ul className="notifications">
@@ -47,8 +59,8 @@ export default function Dashboard() {
               <strong>{request.spot.company}</strong> for the date{" "}
               <strong>{request.date}</strong>.
             </p>
-            <button className="accept">ACCEPT</button>
-            <button className="reject">REJECT</button>
+            <button className="accept" onClick={() => handleAccept(request._id)}>ACCEPT</button>
+            <button className="reject" onClick={() => handleReject(request._id)}>REJECT</button>
           </li>
         ))}
       </ul>
