@@ -67,4 +67,4 @@ Once your pull request merge is done, you can delete your branch.
 
 ## :memo: License
 
-This project is under the MIT license. See [LICENSE](LICENSE.md) file for more details.
+This project is under the MIT license. See [LICENSE](LICENSE) file for more details.
