@@ -11,7 +11,7 @@
   <img alt="Repository repo size" src="https://img.shields.io/github/repo-size/Leonardofreua/aircnc-omnistack">
   
   <a href="https://github.com/Leonardofreua/aircnc-omnistack/commits/master">
-    <img alt="Repository last commit" src="https://img.shields.io/github/last-commit/Leonardofreua/aircnc-omnistack">
+    <img alt="Repository last commit" src="https://img.shields.io/github/last-commit/Leonardofreua/aircnc-omnistack.svg">
   </a>
 
   <a href="https://github.com/Leonardofreua/reactNativeBasic/issues">
