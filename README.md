@@ -6,6 +6,10 @@
   ☕ Code and coffee
 </h4>
 <p align="center">
+   <a href="https://www.linkedin.com/in/leonardo-freua-aa3a40138/" target="_blank" rel="noopener noreferrer">
+    <img alt="Made by" src="https://img.shields.io/badge/made%20by-Leonardo%20Freua-%233b9eff">
+  </a>
+    
   <img alt="Repository language count" src="https://img.shields.io/github/languages/count/Leonardofreua/aircnc-omnistack">
 
   <img alt="Repository repo size" src="https://img.shields.io/github/repo-size/Leonardofreua/aircnc-omnistack">
@@ -68,3 +72,7 @@ Once your pull request merge is done, you can delete your branch.
 ## :memo: License
 
 This project is under the MIT license. See [LICENSE](LICENSE) file for more details.
+
+---
+
+Made by Leonardo Freua [See my linkedin](https://www.linkedin.com/in/leonardo-freua-aa3a40138/)
